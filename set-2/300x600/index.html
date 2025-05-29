@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <meta name="generator" content="Google Web Designer 16.2.0.0128">
+  <meta name="environment" content="gwd-googleads">
+  <meta data-template-name="AdMob_Standard_Banner_Build_Dissolve_300x600">
+  <meta name="template" content="Banner 2.1.2">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="gwdpage_style.css" rel="stylesheet" data-version="13" data-exports-type="gwd-page">
+  <link href="gwdpagedeck_style.css" rel="stylesheet" data-version="14" data-exports-type="gwd-pagedeck">
+  <link href="gwdgooglead_style.css" rel="stylesheet" data-version="9" data-exports-type="gwd-google-ad">
+  <link href="gwdimage_style.css" rel="stylesheet" data-version="17" data-exports-type="gwd-image">
+  <link href="gwdattached_style.css" rel="stylesheet" data-version="2" data-exports-type="gwd-attached">
+  <style id="gwd-lightbox-style">
+    .gwd-lightbox {
+      overflow: hidden;
+    }
+  </style>
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      line-height: 1.2;
+      cursor: pointer;
+    }
+    .gwd-page-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .gwd-page-content {
+      transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      transform-style: preserve-3d;
+      position: absolute;
+      background-color: transparent;
+    }
+    .gwd-page-content * {
+      transform-style: preserve-3d;
+    }
+    .gwd-page-wrapper {
+      position: absolute;
+      transform: translateZ(0px);
+      background-color: rgb(204, 204, 204);
+    }
+    .gwd-page-size {
+      width: 300px;
+      height: 600px;
+    }
+    p {
+      margin: 0px;
+    }
+    .gwd-div-wxlk {
+      background-image: none;
+      background-color: rgb(245, 245, 245);
+      width: 300px;
+      height: 600px;
+    }
+    .gwd-div-nusn {
+      width: 300px;
+      height: 600px;
+    }
+  </style>
+  <script data-source="gwd_webcomponents_v1_min.js" data-version="2" data-exports-type="gwd_webcomponents_v1" src="gwd_webcomponents_v1_min.js"></script>
+  <script data-source="https://s0.2mdn.net/ads/studio/Enabler.js" data-exports-type="gwd-google-ad" src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+  <script data-source="gwdpage_min.js" data-version="13" data-exports-type="gwd-page" src="gwdpage_min.js"></script>
+  <script data-source="gwdpagedeck_min.js" data-version="14" data-exports-type="gwd-pagedeck" src="gwdpagedeck_min.js"></script>
+  <script data-source="gwdgooglead_min.js" data-version="9" data-exports-type="gwd-google-ad" src="gwdgooglead_min.js"></script>
+  <script data-source="gwdimage_min.js" data-version="17" data-exports-type="gwd-image" src="gwdimage_min.js"></script>
+  <script data-source="gwdattached_min.js" data-version="2" data-exports-type="gwd-attached" src="gwdattached_min.js"></script>
+  <script data-source="gwdtexthelper_min.js" data-version="18" data-exports-type="gwd-text-helper" src="gwdtexthelper_min.js"></script>
+  <script id="js-gsap" src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.0.1_min.js" data-gwd-node="true"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+      .adContent{
+        border: 1px solid #000000;
+        background-color: #ffffff;
+        width: 298px;
+        height: 598px;
+        font-family: "Outfit", sans-serif;
+        font-style: normal !important;
+      }
+      .topSection{
+        background: #2A7B9B;
+        background: linear-gradient(180deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+        position: absolute;
+        top:0;
+        height: 299px;
+        width: 298px;
+      }
+      .icon {
+        width: 40px;
+        height: auto;
+        opacity: 0;
+        position: absolute;
+        right: -160px;
+        top: 10px;
+      }
+      .icon4{
+        animation-name: myanimation;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes myanimation {
+      0%   {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1)
+      }
+      50%  {
+        -webkit-transform: scale(1.4);
+        -moz-transform: scale(1.4);
+        -o-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        transform: scale(1.4)
+      }
+      100%  {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1)
+      }
+    }
+      .screen{
+        opacity: 0;
+        position: absolute;
+        top:60px;
+        text-align:center;
+        width: 278px;
+        padding: 0 10px;
+      }
+      h1, p{
+        margin: 0;
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+      h1{
+        color: #ffffff;
+        font-size: 20px;
+        line-height: 21px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+      p{
+        color: #15094b;
+        font-size: 14px;
+        line-height: 16px;  
+        font-family: "Outfit", sans-serif;
+        font-style: normal;
+        font-weight:400;
+        font-optical-sizing: auto;
+      }
+      #isi-wrapper {
+        position: absolute;
+        top: 299px;
+        width: 298px;
+      }
+      .isiFixedHeader{
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        background-color: #020241;
+        position: unset;
+        height: 17px;
+        width: 100%;
+      }
+      .isiFixedHeader p, a{
+        color: #fff;
+        font-size: 7px;
+        line-height: 17px;
+        font-weight: 400;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        letter-spacing: .5px;
+        text-decoration: none;
+      }
+      .link{
+        cursor: pointer;
+      }
+      #scrollerContainer {
+        left: 0px;
+        top: 38px;
+        width: 100%;
+        height: 277px;
+        background-color: #ffffff;
+      }
+      #scrollerContainer #scrollerMask {
+        height: 257px;
+        width: 100%;
+        z-index: 501;
+        overflow: hidden;
+      }
+      #scrollerContainer #scrollerContent {
+        padding: 7px 8px 10px 8px;
+      }
+      #scrollerContainer *{
+        font-family: sans-serif;
+      }
+      #scrollerContainer h2{
+        font-size: 13px;
+        line-height: 13px;
+        color: #020241;
+        font-weight: 700;
+        margin: 5px 8px; 
+      }
+      #scrollerContent p{
+        font-size: 12px;
+        line-height: 13px;
+        color: #111111;
+        margin-bottom: 10px;
+      }
+      #scrollerContent p.small{
+        font-size: 8px;
+        line-height: 9px;
+      }
+      #scrollerContent .mb-20{
+        margin-bottom: 20px;
+      }
+      #scrollerContent .navyHeadline{
+        color: #020241;
+        font-weight: 700;
+      }
+      #scrollerContent sup{
+        vertical-align: 3px;
+        line-height:1;
+      }
+      #scrollerContent .link{
+        color: rgba(87, 199, 133, 1);
+        text-decoration: underline;
+      }
+      .isiLogo{
+        margin-bottom: 10px;
+        margin-left: 105px;
+        width: 70px;
+      }
+      #scrollerContainer .iScrollVerticalScrollbar {
+        left: calc(100% - 4px);
+        border-radius: 0;
+        top: 10px !important;
+        width: 2px !important;
+        background-color: #dad9d9;
+      }
+      #scrollerContainer .iScrollIndicator {
+        background-color: #020241 !important;
+        height: 12px !important;
+        width: 2px !important;
+        border: none !important;
+        top: 0;
+        border-radius: 5px !important;
+      }
+  </style>
+  <script src="iscroll.js"></script>
+  <script>
+    var overAllClickTag = "https://www.google.com";
+    var clickTag2       = "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf";
+    var clickTag3       = "https://www.fda.gov/";
+  </script>
+</head>
+
+<body>
+  <gwd-text-helper id="gwd-text-helper_1" fit-font-size-for-selector="[data-gwd-fit-font-size],[gwd-fitting-truncate]"></gwd-text-helper>
+  <gwd-google-ad id="gwd-ad" polite-load="">
+    <gwd-metric-configuration>
+      <gwd-metric-event source="cta" event="tapareaexit" metric="" exit="Exit"></gwd-metric-event>
+    </gwd-metric-configuration>
+    <gwd-pagedeck class="gwd-page-container" id="pagedeck">
+      <gwd-page id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox gwd-div-wxlk" data-gwd-width="300px" data-gwd-height="600px">
+        <div class="gwd-page-content gwd-page-size gwd-div-nusn">
+           <div class="adContent">
+            <div class="topSection" id="topSection">
+              <a href="javascript:window.open(window.overAllClickTag)">
+                <div class="screen1 screen">
+                  <h1>
+                    Check it out
+                  </h1>
+                  <p>
+                    Scene 1 copy goes here<br><br>
+                    There's a 3 second hold on this screen
+                  </p>
+                </div>
+                <div class="screen2 screen">
+                  <p>
+                    Scene 2 copy goes here<br><br>
+                    There's a 3 second hold on this screen
+                  </p>
+                </div>
+                <div class="screen3 screen">
+                  <p>
+                    Scene 3 copy goes here<br><br>
+                    There's a 3 second hold on this screen
+                  </p>
+                </div>
+                <div class="screen4 screen">
+                  <p>
+                    Scene 4 copy goes here<br><br>
+                    Once this copy loads, ISI begins to autoscroll.&#8595;
+                  </p>
+                </div>
+                <gwd-image source="./assets/patient.png" alt='Patient icon' class="icon icon1" id="gwd-image_1"></gwd-image>
+                <gwd-image source="./assets/medicine.png" alt='Medicine icon' class="icon icon2" id="gwd-image_2"></gwd-image>
+                <gwd-image source="./assets/medical-team.png" alt='Medical Team icon' class="icon icon3" id="gwd-image_3"></gwd-image>
+                <gwd-image source="./assets/public-health.png" alt='Public Health icon' class="icon icon4" id="gwd-image_4"></gwd-image>
+              </a>
+            </div>
+            <div class="isi-section" id="isi-wrapper">
+              <div id="isiContainer">
+                <div class="isiFixedHeader">
+                  <div class="isiBorder">
+                    <p><a href="javascript:window.open(window.clickTag2)" id="piLink" class="link">Prescribing Information</a> | <a href="javascript:window.open(window.clickTag3)" id="medLink" class="link">Medication Guide</a></p>
+                  </div>
+                </div>
+                <div id="scrollerContainer">
+                  <h2>IMPORTANT SAFETY INFORMATION</h2>
+                  <div id="scrollerMask">
+                    <div id="scrollerContent">
+                      <p class="navyHeadline">CONTRAINDICATIONS</p>
+                      <p>NAME_OF_MED<sup>&reg;</sup> is contraindicated in patients with a Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis sunt ad deserunt quisquam adipisci quaerat voluptatum facilis libe.</p>
+                      <p class="navyHeadline">WARNINGS AND PRECAUTIONS</p>
+                      <p>
+                        <span class="navyHeadline">Reactions</span><br/>
+                        Serious reactions, have been reported with postmarket use of NAME_OF_MED<sup>&reg;</sup>. Some cases required hospitalization. If a serious  reaction occurs, discontinue NAME_OF_MED<sup>&reg;</sup> and initiate appropriate therapy.
+                      </p>
+                      <p>
+                        <span class="navyHeadline">Infections</span><br/>
+                        NAME_OF_MED<sup>&reg;</sup> may increase the risk of infection. Treatment with NAME_OF_MED<sup>&reg;</sup> should not be initiated in patients with a clinically important active infection until the infection resolves or is adequately treated.
+                      </p>
+                      <p>
+                        <span class="navyHeadline">Immunizations</span><br/>
+                        Prior to initiating NAME_OF_MED<sup>&reg;</sup>, complete all age-appropriate vaccinations according to current immunization guidelines. Avoid use of live vaccines in patients treated with NAME_OF_MED<sup>&reg;</sup>.
+                      </p>
+                      <p class="navyHeadline">
+                        ADVERSE REACTIONS
+                      </p>
+                      <p>
+                        Most common adverse reactions associated with NAME_OF_MED<sup>&reg;</sup> include: Lorem ipsum, dolor sit amet consectetur, adipisicing elit Quaerat reprehenderit iste, mollitia voluptas accusantium excepturi odio, ipsum nemo molestiae dolorem maxime quae dolores modi tempore, perferendis laborum, officiis aliquid, facilis.
+                      </p>
+                      <p>
+                        <strong>Please read the full <span id="piLink" class="link">Prescribing Information</span> and <span id="medGuide" class="link">Medication Guide</span> for NAME_OF_MED<sup>&reg;</sup>. Provide the <span id="medGuide2" class="link">Medication Guide</span> to your patients and encourage discussion.</strong>
+                      </p>
+                      <p class="navyHeadline">
+                        INDICATIONS
+                      </p>
+                      <p>
+                        NAME_OF_MED<sup>&reg;</sup> is indicated for Lorem, ipsum dolor sit amet consectetur adipisicing elit Id praesentium, cum modi dolor quisquam iure qui ex suscipit. Quidem sequi temporibus excepturi.
+                      </p>
+                      <p class="mb-20 small">© COMPANY_NAME and its affiliates 2025 05/25</p>
+                      <gwd-image source="./assets/logo.png" alt="COMPANY_NAME Logo" class="isiLogo" id="gwd-image_5"></gwd-image>     
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </gwd-page>
+    </gwd-pagedeck>
+  </gwd-google-ad>
+  <script id="gwd-init-code">
+    (function() {
+
+      var gwdAd = document.getElementById('gwd-ad');
+      /**
+       * Handles the DOMContentLoaded event. The DOMContentLoaded event is
+       * fired when the document has been completely loaded and parsed.
+       */
+
+      function handleDomContentLoaded(event) {
+        // This is a good place to show a loading or branding image while
+        // the ad loads.
+      }
+
+      /**
+       * Handles the WebComponentsReady event. This event is fired when all
+       * custom elements have been registered and upgraded.
+       */
+      function handleWebComponentsReady(event) {
+        // Start the Ad lifecycle.
+        requestAnimationFrame(function() {
+          setTimeout(function() {
+            gwdAd.initAd();
+          }, 1);
+        });
+      }
+
+      /**
+       * Handles the event that is dispatched after the Ad has been
+       * initialized and before the default page of the Ad is shown.
+       */
+      function handleAdInitialized(event) {
+        // This marks the end of the polite load phase of the Ad. If a
+        // loading image was shown to the user, this is a good place to
+        // remove it.
+      }
+
+      window.addEventListener('DOMContentLoaded',
+        handleDomContentLoaded, false);
+      window.addEventListener('WebComponentsReady',
+        handleWebComponentsReady, false);
+      window.addEventListener('adinitialized',
+        handleAdInitialized, false);
+      
+      
+      
+      var MASTER_TIMELINE = null;
+      var isiSection               = null;
+      var autoScrollSpeed   = 100000;
+      var autoScrollOffset  = 0;
+      var ALLOW_AUTO_SCROLL = true;
+      var CURRENT_PLAY_COUNT = 1;
+      var TOTAL_PLAY_COUNT = 3;
+      $(document).ready(function(){
+        init();
+        var isIOS = (typeof bowser !== 'undefined' && bowser.ios);
+
+        isiSection = new IScroll(scrollerMask, {
+          mouseWheel: true,
+          scrollbars: true,
+          interactiveScrollbars: true,
+          resizeScrollbars: false,
+          click: true,
+          bounce: (isIOS ? false : true)
+        });
+      }); 
+      function init() {
+        animateScene1(); 
+      }
+
+      function addListeners() {
+        isiSection.on('scrollStart', stopAutoScroll);
+        scrollerContainer.addEventListener("touchstart", stopAutoScroll);
+        scrollerContainer.addEventListener("touchmove", stopAutoScroll);
+        scrollerContainer.addEventListener("click", stopAutoScroll);
+        var scroller = document.querySelector('.iScrollIndicator');
+        if(scroller) {
+          scroller.addEventListener("touchstart", stopAutoScroll);
+          scroller.addEventListener("click", stopAutoScroll);
+        }
+      }
+      function stopAutoScroll(event) {
+        if(ALLOW_AUTO_SCROLL) {
+          var currentScrollPosition = getTranslateY(scrollerContent);
+          isiSection.scrollTo(0, currentScrollPosition, 0, {
+            style: 'cubic-bezier(0,0,1,1)',
+            fn: function (k) { return k; }
+          });
+        }
+        ALLOW_AUTO_SCROLL = false;
+      }
+      function autoScroll() {
+        if(CURRENT_PLAY_COUNT > 1 || ALLOW_AUTO_SCROLL == false) {
+          return false;
+        }
+        var endPosition = ((0 - (scrollerContent.offsetHeight - autoScrollOffset)) + scrollerMask.offsetHeight);
+        isiSection.scrollTo(0, endPosition, autoScrollSpeed, {
+          style: 'cubic-bezier(0,0,1,1)',
+          fn: function (k) { return k; }
+        });
+      }
+
+      function animateScene1() {
+        if(MASTER_TIMELINE == null) {
+          MASTER_TIMELINE = gsap.timeline({ defaults: {ease: Power2.easeInOut} });
+        }
+        var tl = MASTER_TIMELINE;
+
+        tl
+        .to('.screen1', {
+          opacity:1,
+          duration: .5,
+        }, 'screen1')
+        .to('.icon1', {
+          opacity:1,
+          right: 119,
+          duration: .5,
+        }, 'screen1')
+        .to('.screen1, .icon1',{
+          opacity:0,
+          duration:.5,
+          delay: 3
+        }, 'screen2Build')
+        .to( '.screen2', {
+          opacity: 1,
+          duration: .5,
+          delay: 3.25
+        }, 'screen2Build')
+        .to( '.icon2', {
+          opacity: 1,
+          right: 119,
+          duration: .5,
+          delay: 3.25
+        }, 'screen2Build')
+        .to('.screen2, .icon2',{
+          opacity:0,
+          duration:.5,
+          delay: 3
+        }, 'screen3Build')
+        .to( '.screen3', {
+          opacity: 1,
+          duration: .5,
+          delay: 3.25
+        }, 'screen3Build')
+         .to( '.icon3', {
+          opacity: 1,
+          right: 119,
+          duration: .5,
+          delay: 3.25
+        }, 'screen3Build')
+        .to('.screen3, .icon3',{
+          opacity:0,
+          duration:.5,
+          delay: 3
+        }, 'screen4Build')
+         .to( '.screen4', {
+          opacity: 1,
+          duration: .5,
+          delay: 3.25,
+        }, 'screen4Build')
+        .to( '.icon4', {
+          opacity: 1,
+          right: 119,
+          duration: .5,
+          delay: 3.25,
+          onComplete: autoScroll
+        }, 'screen4Build')
+        tl.play();
+      }
+    })();
+  </script>
+</body>
+
+</html>
