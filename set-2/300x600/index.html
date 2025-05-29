@@ -92,12 +92,12 @@
         width: 298px;
       }
       .icon {
-        width: 40px;
+        width: 100px;
         height: auto;
         opacity: 0;
         position: absolute;
         right: -160px;
-        top: 10px;
+        top: 20px;
       }
       .icon4{
         animation-name: myanimation;
@@ -130,7 +130,7 @@
       .screen{
         opacity: 0;
         position: absolute;
-        top:60px;
+        top:160px;
         text-align:center;
         width: 278px;
         padding: 0 10px;
@@ -144,15 +144,15 @@
       }
       h1{
         color: #ffffff;
-        font-size: 20px;
-        line-height: 21px;
+        font-size: 28px;
+        line-height: 30px;
         font-weight: 900;
         text-transform: uppercase;
       }
       p{
         color: #15094b;
-        font-size: 14px;
-        line-height: 16px;  
+        font-size: 18px;
+        line-height: 20px;  
         font-family: "Outfit", sans-serif;
         font-style: normal;
         font-weight:400;
@@ -431,19 +431,38 @@
           click: true,
           bounce: (isIOS ? false : true)
         });
+      addListeners();
       }); 
       function init() {
         animateScene1(); 
+        // setTimeout(autoScroll, 3000);
+      }
+
+      function getTranslateY(element) {
+        if (!element) return 0;
+        const transform = window.getComputedStyle(element).getPropertyValue('transform');
+        const matrix = new DOMMatrix(transform);
+        return matrix.m42;
       }
 
       function addListeners() {
+        if (!isiSection) return;
+        
         isiSection.on('scrollStart', stopAutoScroll);
-        scrollerContainer.addEventListener("touchstart", stopAutoScroll);
-        scrollerContainer.addEventListener("touchmove", stopAutoScroll);
+        isiSection.on('scrollEnd', function() {
+          if (!ALLOW_AUTO_SCROLL) {
+            var currentScrollPosition = getTranslateY(scrollerContent);
+            isiSection.scrollTo(0, currentScrollPosition, 0);
+          }
+        });
+        
+        scrollerContainer.addEventListener("touchstart", stopAutoScroll, { passive: false });
+        scrollerContainer.addEventListener("touchmove", stopAutoScroll, { passive: false });
         scrollerContainer.addEventListener("click", stopAutoScroll);
+        
         var scroller = document.querySelector('.iScrollIndicator');
         if(scroller) {
-          scroller.addEventListener("touchstart", stopAutoScroll);
+          scroller.addEventListener("touchstart", stopAutoScroll, { passive: false });
           scroller.addEventListener("click", stopAutoScroll);
         }
       }
@@ -481,7 +500,7 @@
         }, 'screen1')
         .to('.icon1', {
           opacity:1,
-          right: 119,
+          right: 99,
           duration: .5,
         }, 'screen1')
         .to('.screen1, .icon1',{
@@ -496,7 +515,7 @@
         }, 'screen2Build')
         .to( '.icon2', {
           opacity: 1,
-          right: 119,
+          right: 99,
           duration: .5,
           delay: 3.25
         }, 'screen2Build')
@@ -512,7 +531,7 @@
         }, 'screen3Build')
          .to( '.icon3', {
           opacity: 1,
-          right: 119,
+          right: 99,
           duration: .5,
           delay: 3.25
         }, 'screen3Build')
@@ -528,7 +547,7 @@
         }, 'screen4Build')
         .to( '.icon4', {
           opacity: 1,
-          right: 119,
+          right: 99,
           duration: .5,
           delay: 3.25,
           onComplete: autoScroll

@@ -439,19 +439,38 @@
           click: true,
           bounce: (isIOS ? false : true)
         });
+      addListeners();
       }); 
       function init() {
         animateScene1(); 
+        // setTimeout(autoScroll, 3000);
+      }
+
+      function getTranslateY(element) {
+        if (!element) return 0;
+        const transform = window.getComputedStyle(element).getPropertyValue('transform');
+        const matrix = new DOMMatrix(transform);
+        return matrix.m42;
       }
 
       function addListeners() {
+        if (!isiSection) return;
+        
         isiSection.on('scrollStart', stopAutoScroll);
-        scrollerContainer.addEventListener("touchstart", stopAutoScroll);
-        scrollerContainer.addEventListener("touchmove", stopAutoScroll);
+        isiSection.on('scrollEnd', function() {
+          if (!ALLOW_AUTO_SCROLL) {
+            var currentScrollPosition = getTranslateY(scrollerContent);
+            isiSection.scrollTo(0, currentScrollPosition, 0);
+          }
+        });
+        
+        scrollerContainer.addEventListener("touchstart", stopAutoScroll, { passive: false });
+        scrollerContainer.addEventListener("touchmove", stopAutoScroll, { passive: false });
         scrollerContainer.addEventListener("click", stopAutoScroll);
+        
         var scroller = document.querySelector('.iScrollIndicator');
         if(scroller) {
-          scroller.addEventListener("touchstart", stopAutoScroll);
+          scroller.addEventListener("touchstart", stopAutoScroll, { passive: false });
           scroller.addEventListener("click", stopAutoScroll);
         }
       }
