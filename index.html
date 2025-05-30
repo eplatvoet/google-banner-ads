@@ -11,14 +11,14 @@
 
     <style>
         body{
-            background-color: #333333;
+            background-color: #fffcf9;
         }
         .content-wrapper{
             width:100%;
             max-width: 998px;
             margin: 0 auto;
             padding: 25px;
-            background-color: #000000;
+            background-color: #0b4f6c;
         }
         h1{
             font-size: 34px;
@@ -27,7 +27,7 @@
             font-weight: 400;
             font-style: normal;
             margin: 20px 0;
-            color: #ffffff;
+            color: #06d6a0;
         }
         .banner-sets{
             display:flex;
@@ -41,7 +41,7 @@
             margin: 10px 0;
             display:flex;
             flex-direction: column;
-            border: 1px solid #999999;
+            border: 1px solid #06d6a0;
             padding: 20px 10px;
             position: relative;
         }
@@ -51,7 +51,7 @@
             font-family: "Bangers", system-ui;
             font-weight: 400;
             font-style: normal;
-            color: #ffffff;
+            color: #01baef;
             margin: 10px 0;
         }
         p:first-of-type{
@@ -75,7 +75,7 @@
             font-style: normal;
             font-variation-settings: "wdth" 100;
             margin: 5px;
-            color: #fbfd9d;
+            color: #01baef;
             text-decoration:underline;
         }
         p.small{
@@ -96,6 +96,18 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
+        }
+        @media (max-width:768px){
+            .content-wrapper{
+                max-width: 350px;
+                margin: 20px auto;
+            }
+            h1{
+                text-align: center;
+            }
+            .banner-sets{
+                justify-content: center;
+            }
         }
     </style>
 </head>
