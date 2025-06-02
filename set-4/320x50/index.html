@@ -353,16 +353,7 @@
         // This marks the end of the polite load phase of the Ad. If a
         // loading image was shown to the user, this is a good place to
         // remove it.
-      }
-
-      window.addEventListener('DOMContentLoaded',
-        handleDomContentLoaded, false);
-      window.addEventListener('WebComponentsReady',
-        handleWebComponentsReady, false);
-      window.addEventListener('adinitialized',
-        handleAdInitialized, false);
-    
-      var MASTER_TIMELINE   = null;
+        var MASTER_TIMELINE   = null;
       var isiSection        = null;
       var autoScrollSpeed   = 300000;
       var autoScrollOffset  = 0;
@@ -435,6 +426,16 @@
           fn: function (k) { return k; }
         });
       }
+      }
+
+      window.addEventListener('DOMContentLoaded',
+        handleDomContentLoaded, false);
+      window.addEventListener('WebComponentsReady',
+        handleWebComponentsReady, false);
+      window.addEventListener('adinitialized',
+        handleAdInitialized, false);
+    
+      
 
     })();
   </script>
