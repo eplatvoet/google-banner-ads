@@ -214,7 +214,7 @@
         font-weight: 700;
         margin: 5px 8px; 
       }
-      #scrollerContent p{
+      #scrollerContent p, #scrollerContent a{
         font-size: 12px;
         line-height: 13px;
         color: #111111;
@@ -235,12 +235,13 @@
         vertical-align: 3px;
         line-height:1;
       }
-      #scrollerContent .link{
+      #scrollerContent a.link{
         color: rgba(87, 199, 133, 1);
         text-decoration: underline;
+        font-weight: bold;
       }
       .isiLogo{
-        margin-bottom: 100px;
+        margin-bottom: 20px;
         margin-left: 31px;
         width: 70px;
       }
@@ -258,6 +259,11 @@
         border: none !important;
         top: 0;
         border-radius: 5px !important;
+      }
+      @media(max-width:600px){
+        .isiLogo{
+          margin-bottom: 100px;
+        }
       }
   </style>
   <script src="iscroll.js"></script>
@@ -346,7 +352,7 @@
                         Most common adverse reactions associated with NAME_OF_MED<sup>&reg;</sup> include: Lorem ipsum, dolor sit amet consectetur, adipisicing elit Quaerat reprehenderit iste, mollitia voluptas accusantium excepturi odio, ipsum nemo molestiae dolorem maxime quae dolores modi tempore, perferendis laborum, officiis aliquid, facilis.
                       </p>
                       <p>
-                        <strong>Please read the full <span id="piLink" class="link">Prescribing Information</span> and <span id="medGuide" class="link">Medication Guide</span> for NAME_OF_MED<sup>&reg;</sup>. Provide the <span id="medGuide2" class="link">Medication Guide</span> to your patients and encourage discussion.</strong>
+                        <strong>Please read the full <a href="javascript:window.open(window.clickTag2)" id="piLink" class="link">Prescribing Information</a> and <a href="javascript:window.open(window.clickTag3)" id="medGuide" class="link">Medication Guide</a> for NAME_OF_MED<sup>&reg;</sup>. Provide the <a href="javascript:window.open(window.clickTag3)" id="medGuide2" class="link">Medication Guide</a> to your patients and encourage discussion.</strong>
                       </p>
                       <p class="navyHeadline">
                         INDICATIONS
