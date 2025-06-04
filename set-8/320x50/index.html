@@ -114,23 +114,24 @@
      }
      .typewriter h1 {
       color: #ffffff;
-      font-size: 18px !important;
+      font-size: 18px;
+      line-height:1.5;
       opacity:0;
       font-weight: 700;
       margin: 0 auto;
       text-shadow: 3px 3px 1px #000000;
       border-right: .15em solid #f4f67d;
-      font-size: 14px;
       white-space: nowrap;
       overflow: hidden;
     }
     .typewriter h1:nth-child(1) {
       width: 200px;
       margin: 0 auto;
-      font-size: 18px !important;
+      font-size: 18px;
+      line-height:1.5;
       opacity:0;
-      -webkit-animation: type 3.5s steps(30, end), blink .5s step-end infinite;
-      animation: type 3.5s steps(30, end), blink .5s step-end infinite;
+      -webkit-animation: type 4.5s steps(30, end), blink .5s step-end infinite;
+      animation: type 4.5s steps(30, end), blink .5s step-end infinite;
       -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
           -webkit-animation-delay: 2.5s;
@@ -283,10 +284,6 @@
             left: 0,
             duration: 1,
             delay:1.5,
-          }, 'screen1')
-          .to('.typewriter h1', {
-            opacity:1,
-            delay:2.5
           }, 'screen1')
           .to('.screen1',{
             opacity:0,
