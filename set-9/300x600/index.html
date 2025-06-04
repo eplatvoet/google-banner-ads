@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <meta name="generator" content="Google Web Designer 16.2.0.0128">
+  <meta name="environment" content="gwd-googleads">
+  <meta data-template-name="AdMob_Standard_Banner_Build_Dissolve_300x600">
+  <meta name="template" content="Banner 2.1.2">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="gwdpage_style.css" rel="stylesheet" data-version="13" data-exports-type="gwd-page">
+  <link href="gwdpagedeck_style.css" rel="stylesheet" data-version="14" data-exports-type="gwd-pagedeck">
+  <link href="gwdgooglead_style.css" rel="stylesheet" data-version="9" data-exports-type="gwd-google-ad">
+  <link href="gwdimage_style.css" rel="stylesheet" data-version="17" data-exports-type="gwd-image">
+  <link href="gwdattached_style.css" rel="stylesheet" data-version="2" data-exports-type="gwd-attached">
+  <style id="gwd-lightbox-style">
+    .gwd-lightbox {
+      overflow: hidden;
+    }
+  </style>
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      line-height: 1.2;
+      cursor: pointer;
+    }
+    .gwd-page-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .gwd-page-content {
+      transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      transform-style: preserve-3d;
+      position: absolute;
+      background-color: transparent;
+    }
+    .gwd-page-content * {
+      transform-style: preserve-3d;
+    }
+    .gwd-page-wrapper {
+      position: absolute;
+      transform: translateZ(0px);
+      background-color: rgb(204, 204, 204);
+    }
+    .gwd-page-size {
+      width: 300px;
+      height: 600px;
+    }
+    p {
+      margin: 0px;
+    }
+    .gwd-div-wxlk {
+      background-image: none;
+      background-color: rgb(245, 245, 245);
+      width: 300px;
+      height: 600px;
+    }
+    .gwd-div-nusn {
+      width: 300px;
+      height: 600px;
+    }
+  </style>
+  <script data-source="gwd_webcomponents_v1_min.js" data-version="2" data-exports-type="gwd_webcomponents_v1" src="gwd_webcomponents_v1_min.js"></script>
+  <script data-source="https://s0.2mdn.net/ads/studio/Enabler.js" data-exports-type="gwd-google-ad" src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+  <script data-source="gwdpage_min.js" data-version="13" data-exports-type="gwd-page" src="gwdpage_min.js"></script>
+  <script data-source="gwdpagedeck_min.js" data-version="14" data-exports-type="gwd-pagedeck" src="gwdpagedeck_min.js"></script>
+  <script data-source="gwdgooglead_min.js" data-version="9" data-exports-type="gwd-google-ad" src="gwdgooglead_min.js"></script>
+  <script data-source="gwdimage_min.js" data-version="17" data-exports-type="gwd-image" src="gwdimage_min.js"></script>
+  <script data-source="gwdattached_min.js" data-version="2" data-exports-type="gwd-attached" src="gwdattached_min.js"></script>
+  <script data-source="gwdtexthelper_min.js" data-version="18" data-exports-type="gwd-text-helper" src="gwdtexthelper_min.js"></script>
+  <script id="js-gsap" src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.0.1_min.js" data-gwd-node="true"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <style>
+     .adContent{
+       border: 1px solid #000000;
+       background-color: #000000;
+       width: 298px;
+       height: 598px;
+       font-family: "Old Standard TT", serif;
+       font-optical-sizing: auto;
+       font-weight: 400;
+       font-style: normal;
+       font-variation-settings: "wdth" 100;
+     }
+     .bgWrapper{
+      position: absolute;
+      z-index: 1;
+      bottom:30px;
+      height:250px;
+      width: 100%;
+      background-image: url(./assets/black-parade.png);
+       background-position: center center;
+       background-repeat: no-repeat;
+       background-size: 125px;
+       animation: bgShift 3s linear infinite;
+     }
+     @keyframes bgShift {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.5);
+
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+     .screen{
+       position: absolute;
+       top:0px;
+       left: 0px;
+       text-align:center;
+       padding: 40px 20px;
+       width: 258px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       z-index: 2;
+    }
+     h1, p{
+       margin: 0;
+     }
+     h1{
+       color: #ffffff;
+       font-size: 38px;
+       line-height: 37px;
+       font-weight: 400;
+       text-align: center;
+     }
+     .logo{
+      width: 200px;
+      margin:10px 0 0;
+     }
+     a{ 
+      background-color: #ffffff;
+      padding: 10px 34px 8px;
+      border-radius: 35px;
+      margin: 15px 0px 0;
+      font-size: 18px;
+      color: #000000;
+      text-decoration: none;
+      font-weight: 700;
+      cursor: pointer;
+      border: 1px solid #9a9a9a;
+      box-shadow: 2px 2px 2px #666666;
+     }
+     li {
+      list-style-type: none;
+     }
+     #specks {
+      position: absolute;
+      z-index: 999;
+      height: 600px;
+      width: 300px;
+     }
+     .speck {
+      opacity: 0;
+      height: 4px;
+      width: 4px;
+      background: url('http://i1272.photobucket.com/albums/y391/matthew_williams10/speck_zpsu9xym9zl.png');
+      background-size: cover;
+      position: absolute;
+      border-radius: 10px;
+      z-index: 99;
+     }
+     .img {
+      position: absolute;
+      height: 100000px;
+      width: 100000px;
+      top: -8500px;
+      left: -8000px;
+      animation-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750);
+      animation-name: float;
+      animation-iteration-count: infinite;
+    }
+      #img-1 {
+        opacity: 0.75;
+        background: url('https://image.ibb.co/jcTvpv/dust1.jpg');
+        background-repeat: repeat;
+        animation-duration: 600s;
+      }
+      #img-2 {
+        opacity: 0.6;
+        background: url('https://image.ibb.co/goU1Uv/dust2.jpg');
+        background-repeat: repeat;
+        animation-duration: 450s;
+      }
+      #img-3 {
+        opacity: 0.45;
+        background: url('https://image.ibb.co/cymRwa/dust3.jpg');
+        background-repeat: repeat;
+        animation-duration: 350s;
+      }
+      /*ANIMATIONS*/
+      @keyframes twinkle {
+        0% {
+          transform: translate(0px, 0px);
+        }
+        30% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 0.75;
+        }
+        70% {
+          opacity: 0;
+        }
+        100% {
+          transform: translate(175px, 100px);
+        }
+      }
+      @keyframes float {
+        0% {
+          transform: translate(0px, 0px);
+        }
+        100% {
+            transform:translate(8000px, 4000px);
+        }
+      }
+  </style>
+  <script>
+    var overAllClickTag = "https://www.ticketmaster.com/my-chemical-romance-tickets/artist/859324";
+  </script>
+</head>
+
+<body>
+  <gwd-text-helper id="gwd-text-helper_1" fit-font-size-for-selector="[data-gwd-fit-font-size],[gwd-fitting-truncate]"></gwd-text-helper>
+  <gwd-google-ad id="gwd-ad" polite-load="">
+    <gwd-metric-configuration>
+      <gwd-metric-event source="cta" event="tapareaexit" metric="" exit="Exit"></gwd-metric-event>
+    </gwd-metric-configuration>
+    <gwd-pagedeck class="gwd-page-container" id="pagedeck">
+      <gwd-page id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox gwd-div-wxlk" data-gwd-width="300px" data-gwd-height="600px">
+        <div class="gwd-page-content gwd-page-size gwd-div-nusn">
+          <div class="adContent">
+            <div class="bgWrapper"></div>
+            <ul id="dust" data-friction-x="0.03" data-friction-y="0.05">
+              <li class="layer" id="specks" data-depth="0.1"></li>
+              <li class="layer" id="layer-1" data-depth="0.15">
+                <div class="img" id="img-1"></div>
+              </li>
+              <li class="layer" id="layer-2" data-depth="0.25">
+                <div class="img" id="img-2"></div>
+              </li>
+              <li class="layer" id="layer-3" data-depth="0.45">
+                <div class="img" id="img-3"></div>
+              </li>
+            </ul>
+            <div class="screen1 screen">
+              <h1 class="text">
+                "LONG LIVE" THE BLACK PARADE TOUR
+              </h1>
+              <gwd-image source="./assets/mcr.png" alt='My Chemical Romance text' class="logo" id="gwd-image_1"></gwd-image>
+              <a href="javascript:window.open(window.overAllClickTag)">See Events</a>
+            </div>
+          </div>
+        </div>
+      </gwd-page>
+    </gwd-pagedeck>
+  </gwd-google-ad>
+  <script id="gwd-init-code">
+    (function() {
+
+      var gwdAd = document.getElementById('gwd-ad');
+      /**
+       * Handles the DOMContentLoaded event. The DOMContentLoaded event is
+       * fired when the document has been completely loaded and parsed.
+       */
+
+      function handleDomContentLoaded(event) {
+        // This is a good place to show a loading or branding image while
+        // the ad loads.
+      }
+
+      /**
+       * Handles the WebComponentsReady event. This event is fired when all
+       * custom elements have been registered and upgraded.
+       */
+      function handleWebComponentsReady(event) {
+        // Start the Ad lifecycle.
+        requestAnimationFrame(function() {
+          setTimeout(function() {
+            gwdAd.initAd();
+          }, 1);
+        });
+      }
+
+      /**
+       * Handles the event that is dispatched after the Ad has been
+       * initialized and before the default page of the Ad is shown.
+       */
+      function handleAdInitialized(event) {
+        // This marks the end of the polite load phase of the Ad. If a
+        // loading image was shown to the user, this is a good place to
+        // remove it.
+        for (var i = 1; i < 6; i++) {
+          twinkleLoop(i);
+        };
+
+        function twinkleLoop(i) {
+          var duration = ((Math.random() * 5) + 3)
+
+          duration = duration - ((495 - 100)/100)
+          twinkle(i, duration)
+
+          setTimeout(function() {
+            twinkleLoop(i)
+          }, duration * 1000);
+        }
+
+        function twinkle(id, duration) {
+          var top = (Math.floor(Math.random() * 85) + 0) + '%';
+          var left = (Math.floor(Math.random() * 85) + 0) + '%';
+
+          $('#speck' + id).remove();
+          $('#specks').append("<div class='speck' id='speck" + id + "'></div>")
+          $('#speck' + id).css({
+            'top': top,
+            'left': left,
+            'animation-duration': duration + 's',
+            'animation-timing-function': 'cubic-bezier(0.250, 0.250, 0.750, 0.750)',
+            'animation-name': 'twinkle',
+          })
+        }
+      }
+
+      window.addEventListener('DOMContentLoaded',
+        handleDomContentLoaded, false);
+      window.addEventListener('WebComponentsReady',
+        handleWebComponentsReady, false);
+      window.addEventListener('adinitialized',
+        handleAdInitialized, false);     
+    })();
+  </script>
+</body>
+
+</html>
