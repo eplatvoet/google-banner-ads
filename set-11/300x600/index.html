@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta name="generator" content="Google Web Designer 16.2.0.0128">
+  <meta name="environment" content="gwd-googleads">
+  <meta data-template-name="AdMob_Standard_Banner_Build_Dissolve_300x600">
+  <meta name="template" content="Banner 2.1.2">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="gwdpage_style.css" rel="stylesheet" data-version="13" data-exports-type="gwd-page">
+  <link href="gwdpagedeck_style.css" rel="stylesheet" data-version="14" data-exports-type="gwd-pagedeck">
+  <link href="gwdgooglead_style.css" rel="stylesheet" data-version="9" data-exports-type="gwd-google-ad">
+  <link href="gwdimage_style.css" rel="stylesheet" data-version="17" data-exports-type="gwd-image">
+  <link href="gwdattached_style.css" rel="stylesheet" data-version="2" data-exports-type="gwd-attached">
+  <style id="gwd-lightbox-style">
+    .gwd-lightbox {
+      overflow: hidden;
+    }
+  </style>
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      line-height: 1.2;
+      cursor: pointer;
+    }
+    .gwd-page-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .gwd-page-content {
+      transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      transform-style: preserve-3d;
+      position: absolute;
+      background-color: transparent;
+    }
+    .gwd-page-content * {
+      transform-style: preserve-3d;
+    }
+    .gwd-page-wrapper {
+      position: absolute;
+      transform: translateZ(0px);
+      background-color: rgb(204, 204, 204);
+    }
+    .gwd-page-size {
+      width: 300px;
+      height: 600px;
+    }
+    p {
+      margin: 0px;
+    }
+    .gwd-div-wxlk {
+      background-image: none;
+      background-color: rgb(245, 245, 245);
+      width: 300px;
+      height: 600px;
+    }
+    .gwd-div-nusn {
+      width: 300px;
+      height: 600px;
+    }
+  </style>
+  <script data-source="gwd_webcomponents_v1_min.js" data-version="2" data-exports-type="gwd_webcomponents_v1" src="gwd_webcomponents_v1_min.js"></script>
+  <script data-source="https://s0.2mdn.net/ads/studio/Enabler.js" data-exports-type="gwd-google-ad" src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+  <script data-source="gwdpage_min.js" data-version="13" data-exports-type="gwd-page" src="gwdpage_min.js"></script>
+  <script data-source="gwdpagedeck_min.js" data-version="14" data-exports-type="gwd-pagedeck" src="gwdpagedeck_min.js"></script>
+  <script data-source="gwdgooglead_min.js" data-version="9" data-exports-type="gwd-google-ad" src="gwdgooglead_min.js"></script>
+  <script data-source="gwdimage_min.js" data-version="17" data-exports-type="gwd-image" src="gwdimage_min.js"></script>
+  <script data-source="gwdattached_min.js" data-version="2" data-exports-type="gwd-attached" src="gwdattached_min.js"></script>
+  <script data-source="gwdtexthelper_min.js" data-version="18" data-exports-type="gwd-text-helper" src="gwdtexthelper_min.js"></script>
+  <script id="js-gsap" src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.0.1_min.js" data-gwd-node="true"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <style>
+     .adContent{
+       border: 1px solid #000000;
+       background-color: #ffffff;
+       width: 298px;
+       height: 598px;
+       font-family: "PT Sans", sans-serif;
+       font-style: normal !important;
+      }
+      .topContent{
+        height:299px;
+        width:298px;
+        position:relative;
+      }
+      .triggerWrapper{
+        display:flex;
+        justify-content:space-around;
+        position:relative;
+        width: 100%;
+        padding: 10px 0;
+        z-index:1;
+      }
+      .trigger{
+        cursor: pointer;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+      }
+      .trigger span{
+        font-size: 30px;
+        line-height:30px;
+        color: #1b0386;
+      }
+      .imgWrapper{
+        height: 208px;
+        width: 298px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .sliderImg{
+        opacity:0;
+        position:absolute;
+        width: 166px;
+      }
+      .selectedImg{
+        opacity:1;
+        animation: selectedImg-animate 2s ease-in-out;
+        animation-delay: 2s;
+      }
+      /* Add CSS & Keyframe that increases the size of the selectedImg by 25%  & back to normal with a timing of 3.5s & repeat infinite*/
+      @keyframes selectedImg-animate {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.24); }
+        100% { transform: scale(1); }
+      }
+      div.copyWrapper{
+        height: 77px;
+        font-family: "Parisienne", cursive;
+        font-size: 23px;
+        color: #1b0386;
+        padding: 10px;
+        text-align: center;
+      }
+     .bottomContent{
+      height: 299px;
+      height: 299px;
+      position: absolute;
+      top: 299px;
+     }
+     .btmImg{
+      height:299px;
+     }
+     .btmCta{
+      font-family: "Roboto", sans-serif;
+      background-color: rgba(255, 255, 255, .7);
+      font-size: 22px;
+      color: #1b0386;
+      position: absolute;
+      padding: 8px 21px;
+      text-decoration: none;
+      left: 65px;
+      bottom: 20px;
+      border-radius: 6px;
+     }
+  </style>
+ <script>
+    var overAllClickTag = "https://www.google.com/travel/";
+  </script>
+</head>
+
+<body>
+  <gwd-text-helper id="gwd-text-helper_1" fit-font-size-for-selector="[data-gwd-fit-font-size],[gwd-fitting-truncate]"></gwd-text-helper>
+  <gwd-google-ad id="gwd-ad" polite-load="">
+    <gwd-metric-configuration>
+      <gwd-metric-event source="cta" event="tapareaexit" metric="" exit="Exit"></gwd-metric-event>
+    </gwd-metric-configuration>
+    <gwd-pagedeck class="gwd-page-container" id="pagedeck">
+      <gwd-page id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox gwd-div-wxlk" data-gwd-width="300px" data-gwd-height="600px">
+        <div class="gwd-page-content gwd-page-size gwd-div-nusn">
+          <div class="adContent">
+            <div class="topContent">
+              <div class="triggerWrapper">
+                <div class="left-trigger trigger">
+                  <span>&#8678;</span>
+                </div>
+                <div class="right-trigger trigger">
+                  <span>&#8680;</span>
+                </div>
+              </div>
+              <div class="imgWrapper">
+                <gwd-image source="./assets/lawn.jpg" alt=' image' class="sliderImg selectedImg slideImg1" id="gwd-image_1" data-sliderImg="1"></gwd-image>
+                <gwd-image source="./assets/jetty.jpg" alt=' image' class="sliderImg slideImg2" id="gwd-image_2" data-sliderImg="2"></gwd-image>
+                <gwd-image source="./assets/hammock.jpg" alt=' image' class="sliderImg slideImg3" id="gwd-image_3" data-sliderImg="3"></gwd-image>
+                <gwd-image source="./assets/beach.jpg" alt=' image' class="sliderImg slideImg4" id="gwd-image_4" data-sliderImg="4"></gwd-image>
+                <gwd-image source="./assets/sunset-pool.jpg" alt=' image' class="sliderImg slideImg5" id="gwd-image_5" data-sliderImg="5"></gwd-image>
+              </div>
+              <div class="copyWrapper">
+                Dreaming of that next vacation?
+              </div>
+            </div>
+            <div class="bottomContent">
+              <gwd-image source="./assets/day-pool.jpg" alt='Resort pool image' class="btmImg" id="gwd-image_6"></gwd-image>
+              <a href="javascript:window.open(window.overAllClickTag)" class="btmCta">Explore Now</a>
+            </div>
+          </div>
+        </div>
+      </gwd-page>
+    </gwd-pagedeck>
+  </gwd-google-ad>
+  <script id="gwd-init-code">
+    (function() {
+
+      var gwdAd = document.getElementById('gwd-ad');
+      /**
+       * Handles the DOMContentLoaded event. The DOMContentLoaded event is
+       * fired when the document has been completely loaded and parsed.
+       */
+
+      function handleDomContentLoaded(event) {
+        // This is a good place to show a loading or branding image while
+        // the ad loads.
+      }
+
+      /**
+       * Handles the WebComponentsReady event. This event is fired when all
+       * custom elements have been registered and upgraded.
+       */
+      function handleWebComponentsReady(event) {
+        // Start the Ad lifecycle.
+        requestAnimationFrame(function() {
+          setTimeout(function() {
+            gwdAd.initAd();
+          }, 1);
+        });
+      }
+
+      /**
+       * Handles the event that is dispatched after the Ad has been
+       * initialized and before the default page of the Ad is shown.
+       */
+      function handleAdInitialized(event) {
+        // This marks the end of the polite load phase of the Ad. If a
+        // loading image was shown to the user, this is a good place to
+        // remove it.
+        let currentIndex = 1;
+        let autoSlideTimer;
+        
+        function startAutoSlide() {
+          // Clear any existing timer
+          if (autoSlideTimer) {
+            clearTimeout(autoSlideTimer);
+          }
+          
+          // Set new timer for next slide
+          autoSlideTimer = setTimeout(function() {
+            currentIndex++;
+            if (currentIndex > 4) {
+              currentIndex = 1;
+            }
+            updateSliderContent(currentIndex);
+            startAutoSlide(); // Start next timer
+          }, 7000);
+        }
+        
+        function updateSliderContent(index) {
+          $('.sliderImg').removeClass('selectedImg');
+          $('.sliderImg[data-sliderImg="' + index + '"]').addClass('selectedImg');
+        }
+        
+        // On page load, the 'selectedImg' gwd-image is updated to show the src/alt of sliderImg1
+        updateSliderContent(1);
+        startAutoSlide(); // Start the automatic cycling
+
+        // Add click handlers after a short delay to ensure DOM is ready
+        setTimeout(function() {
+          $('.left-trigger').off('click').on('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            currentIndex--;
+            if (currentIndex < 1) {
+              currentIndex = 4;
+            }
+            updateSliderContent(currentIndex);
+            startAutoSlide(); // Reset timer after manual navigation
+          });
+
+          $('.right-trigger').off('click').on('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            currentIndex++;
+            if (currentIndex > 4) {
+              currentIndex = 1;
+            }
+            updateSliderContent(currentIndex);
+            startAutoSlide(); // Reset timer after manual navigation
+          });
+        }, 100);
+      }
+
+      window.addEventListener('DOMContentLoaded',
+        handleDomContentLoaded, false);
+      window.addEventListener('WebComponentsReady',
+        handleWebComponentsReady, false);
+      window.addEventListener('adinitialized',
+        handleAdInitialized, false);     
+    })();
+  </script>
+</body>
+
+</html>
