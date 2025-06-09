@@ -80,7 +80,6 @@
        background-color: #ffffff;
        width: 968px;
        height: 248px;
-       font-family: "PT Sans", sans-serif;
        font-style: normal !important;
        display:flex;
      }
@@ -131,7 +130,6 @@
         animation: selectedImg-animate 2s ease-in-out;
         animation-delay: 2s;
       }
-      /* Add CSS & Keyframe that increases the size of the selectedImg by 25%  & back to normal with a timing of 3.5s & repeat infinite*/
       @keyframes selectedImg-animate {
         0% { transform: scale(1); }
         50% { transform: scale(1.24); }
@@ -185,8 +183,7 @@
       <gwd-page id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox gwd-div-wxlk" data-gwd-width="970px" data-gwd-height="250px">
         <div class="gwd-page-content gwd-page-size gwd-div-nusn">
           <div class="adContent">
-            <div class="topContent">
-              
+            <div class="topContent">    
               <div class="imgWrapper">
                 <gwd-image source="./assets/lawn.jpg" alt=' image' class="sliderImg selectedImg slideImg1" id="gwd-image_1" data-sliderImg="1"></gwd-image>
                 <gwd-image source="./assets/jetty.jpg" alt=' image' class="sliderImg slideImg2" id="gwd-image_2" data-sliderImg="2"></gwd-image>
